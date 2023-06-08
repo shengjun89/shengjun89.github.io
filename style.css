@@ -50,13 +50,28 @@
   animation: width2 4s steps(24) forwards;
 }
 
-.text__box_cursor::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  height: calc(var(--ts-line-height-heading) * 0.8);
-  border-right: 1px solid #000;
-  animation: showInfinite 0.5s infinite both;
+
+
+@media screen and (min-width: 600px) {
+  .text__box_cursor::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    height: 56px;
+    border-right: 1px solid #000;
+    animation: showInfinite 0.5s infinite both;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text__box_cursor::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    height: 32px;
+    border-right: 1px solid #000;
+    animation: showInfinite 0.5s infinite both;
+  }
 }
 
 .one {
@@ -127,8 +142,6 @@ video {
 .highlight + h1, .highlight + h2 {
   margin-block-start: calc(var(--ts-paragraph-spacing) / 2);
 }
-
-
 
 .container {
   max-width: 1200px;
