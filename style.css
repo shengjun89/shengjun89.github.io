@@ -22,6 +22,32 @@
   color: var(--ts-color-link);
 }
 
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:4em;
+  text-align:left;
+  height:400px;
+  width:100%;
+  display:block;
+  position:absolute;
+  color:black;
+  top:55%;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
 .typing {
   /* max-width: 1200px; */
   /* padding: 0 auto; */
@@ -48,61 +74,6 @@
   font-family: "Courier New", Courier, monospace;
   white-space: nowrap;
   animation: width2 4s steps(10) forwards;
-}
-
-
-
-@media screen and (min-width: 600px) {
-  .text__box_cursor::after {
-    content: "";
-    position: absolute;
-    right: 0px;
-    height: 56px;
-    border-right: 1px solid #000;
-    animation: showInfinite 0.5s infinite both;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .text__box_cursor::after {
-    content: "";
-    position: absolute;
-    right: 0px;
-    height: 32px;
-    border-right: 1px solid #000;
-    animation: showInfinite 0.5s infinite both;
-  }
-}
-
-.one {
-  animation-delay: 0s;
-}
-
-.two {
-  animation-delay: 4s;
-  /* animation: width 4s steps(10) forwards; */
-}
-
-#dynamicContent {
-  white-space: nowrap;
-}
-
-@keyframes width1 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 24em; //  单位em,表示一个字体的宽度
-  }
-}
-
-@keyframes width2 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 20em; //  单位em,表示一个字体的宽度
-  }
 }
 
 @keyframes showInfinite {
