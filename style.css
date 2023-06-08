@@ -36,7 +36,7 @@
   line-height: 34px;
   font-family: "Courier New", Courier, monospace;
   white-space: nowrap;
-  animation: width1 4s steps(24) forwards;
+  animation: width1 4s steps(10) forwards;
 }
 
 .text__box_cursor {
@@ -47,7 +47,7 @@
   line-height: 34px;
   font-family: "Courier New", Courier, monospace;
   white-space: nowrap;
-  animation: width2 4s steps(24) forwards;
+  animation: width2 4s steps(10) forwards;
 }
 
 
