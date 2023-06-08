@@ -54,7 +54,7 @@
   content: "";
   position: absolute;
   right: 0px;
-  height: 100%;
+  height: calc(var(--ts-line-height-heading) * 0.8);
   border-right: 1px solid #000;
   animation: showInfinite 0.5s infinite both;
 }
