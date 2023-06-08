@@ -83,6 +83,10 @@
   /* animation: width 4s steps(10) forwards; */
 }
 
+#dynamicContent {
+  white-space: nowrap;
+}
+
 @keyframes width1 {
   0% {
     width: 0;
