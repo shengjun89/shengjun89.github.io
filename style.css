@@ -133,6 +133,7 @@ video {
 .header {
   padding: 40px 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .logo, .nav {
@@ -163,11 +164,11 @@ video {
 
 .header .nav {
   margin: 0 0 0 64px;
-  padding: 0;
+  /* padding: 0; */
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  align-items: baseline;
+  justify-content: flex-end;
+  /* width: 100%; */
 }
 
 .nav li {
@@ -718,6 +719,22 @@ textarea {
 @media screen and (max-width: 600px) {
 
   /* GENERAL STYLES */
+
+  .console-container {
+    font-family: Khula;
+    font-size: 4em;
+    text-align: left;
+    height: 400px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    color: black;
+    top: 60%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  } 
 
   .hide-mobile {
     display: none;
