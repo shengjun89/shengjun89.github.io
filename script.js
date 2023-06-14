@@ -1,5 +1,31 @@
-// function([string1, string2],target id,[color1,color2])    
- consoleText(['全链路体验设计.', '原型创意设计.', '效率工具开发.'], 'text',['#686DE0','#686DE0','#686DE0']);
+// function([string1, string2],target id,[color1,color2])  
+
+function moveCircle(e) {
+  TweenMax.to($(".circle"), 0.5, {
+    css: {
+      left: e.pageX,
+      top: e.pageY
+    }, ease: Power2.easeOut
+  });
+}
+
+$(window).on('mousemove', moveCircle);
+
+
+TweenMax.to($(".circle"),0.4,{scale:2,autoAlpha:1});
+
+
+$("h1, a").mouseover(function(){
+  var largura = $(this).width();
+  //  console.log(largura/10);
+  TweenMax.to($(".circle"),0.2,{scale:largura/4});
+});
+$("h1, a").mouseout(function(){
+
+  TweenMax.to($(".circle"),0.4,{scale:2});
+});
+
+consoleText(['全链路体验设计', '原型创意设计', '效率工具开发'], 'text',['#000','#000','#000']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
