@@ -377,7 +377,7 @@ video {
 
 .figma-cursor {
   position: absolute;
-  left: 20%;
+  left: 60%;
   top: 50%;
   animation: 20s hovering infinite;
 }
